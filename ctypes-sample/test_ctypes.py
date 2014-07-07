@@ -4,7 +4,7 @@ from ctypes import *
 import time
 
 libc = CDLL("./acc.so")
-libc.acc.restype = c_ulonglong # ĞèÒªÃ÷È·Ö¸Ã÷·µ»ØÀàĞÍ
+libc.acc.restype = c_ulonglong # éœ€è¦æ˜ç¡®æŒ‡æ˜è¿”å›ç±»å‹
 # libc.say_hello.restype = c_char_p
 t0 = time.time()
 print libc.acc()
