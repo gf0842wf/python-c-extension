@@ -18,8 +18,8 @@ unsigned long long acc()
 	}
 	return s;
 }
-""")   # or a list of libraries to link with
+""", libraries=[])   # or a list of libraries to link with
 t0 = time.time()
 print lib.acc()
 print time.time() - t0
-# print ffi.string(s) # 这个针对char* 的变量
+# print ffi.string(say_hello()) # 这个针对返回char* 的,转换为python`s str
