@@ -1,0 +1,5 @@
+1.linux下=>acc.so
+gcc -shared -fPIC -o acc.so acc.c
+2.windows下=>acc.dll
+注:不能再路径含有中文的下编译
+cl acc.c /link /out:acc.dll /dll
