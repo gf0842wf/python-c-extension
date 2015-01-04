@@ -1,5 +1,0 @@
-只编译,生成pyd文件后,文在文件夹下,可以直接import
-python setup.py build
-
-编译安装到系统路径
-python setup.py install
